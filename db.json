@@ -1,0 +1,30 @@
+{
+  "EmployeeDetails": [
+    {
+      "name": "Govind",
+      "email_id": "govi90@gmail.com",
+      "phone_number": 887451516,
+      "password": "govi$#@!",
+      "profile": "Trainee Angular Developer",
+      "id": "57eb"
+    },
+    {
+      "name": "Satya",
+      "email_id": "satya60@gmail.com",
+      "phone_number": 887451513,
+      "password": "saty$#@!",
+      "profile": "Trainee Angular Developer",
+      "id": "e360"
+    },
+    {
+      "id": "4928",
+      "text": "govind",
+      "password": "34r123421"
+    },
+    {
+      "id": "4052",
+      "text": "tvg24c24",
+      "password": "cg3r33g31"
+    }
+  ]
+}
