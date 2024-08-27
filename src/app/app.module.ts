@@ -5,31 +5,36 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { LoginComponent } from './MainPage/login/login.component';
-import { RegistrationComponent } from './MainPage/registration/registration.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
-import { HomeComponent } from './home/home.component';
-import { GlobalNewsComponent } from './global-news/global-news.component';
-import { LocalNewsComponent } from './local-news/local-news.component';
-import { AboutComponent } from './about/about.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
+import { HomeComponent } from './Navbar/about/home/home.component';
+import { GlobalNewsComponent } from './Navbar/about/global-news/global-news.component';
+import { LocalNewsComponent } from './Navbar/about/local-news/local-news.component';
+import { AboutComponent } from './Navbar/about/about.component';
+import { ContactUsComponent } from './Navbar/about/contact-us/contact-us.component';
 import { FooterComponent } from './MainPage/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { Subpage1Component } from './MainPage/Body/subpage1/subpage1.component';
+import { HeaderComponent } from './MainPage/header/header.component';
+import { MainContentComponent } from './MainPage/main-content/main-content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegistrationComponent,
+    // RegistrationComponent,
     HomeComponent,
     GlobalNewsComponent,
     LocalNewsComponent,
     AboutComponent,
     ContactUsComponent,
-    FooterComponent
+    FooterComponent,
+    Subpage1Component,
+    HeaderComponent,
+    MainContentComponent
   ],
   imports: [
     BrowserModule,
