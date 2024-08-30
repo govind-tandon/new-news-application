@@ -20,6 +20,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { Subpage1Component } from './MainPage/Body/subpage1/subpage1.component';
 import { HeaderComponent } from './MainPage/header/header.component';
 import { MainContentComponent } from './MainPage/main-content/main-content.component';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { LoginPageComponent } from './MainPage/login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,8 @@ import { MainContentComponent } from './MainPage/main-content/main-content.compo
     FooterComponent,
     Subpage1Component,
     HeaderComponent,
-    MainContentComponent
+    MainContentComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +49,9 @@ import { MainContentComponent } from './MainPage/main-content/main-content.compo
     MatFormFieldModule,
     FormsModule,
     MatButtonModule,
+    // MatSnackBar,
+    MatSnackBarModule,
+    // CommonModule
     HttpClientModule
   ],
   providers: [

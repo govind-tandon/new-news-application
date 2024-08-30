@@ -20,6 +20,42 @@ export class LoginComponent {
   })
   text = new FormControl('', [Validators.required]);
   password = new FormControl('', [Validators.required], );
+  router: any;
+  snackBar: any;
+
+  // from codefusionhub video, switch between login and register form
+  toggleForm(form:'login' | 'register'){
+    this.activeForm = form;
+   }
+
+  // loginForm: any | undefined | undefined;
+  registerForm:any
+  activeForm:'login' | 'register' = 'login';
+
+  login(){
+    if (this.loginForm.valid){
+      console.log("Login info ==>",this.loginForm.value);
+
+      // Navigate to dashboard or any page after successful login
+      this.router.navigate(['MainPage/dashboard']);
+    }
+    else{
+      this.snackBar.open('Invalid email or password!','Close', { duration:3000 });
+    }
+   }
+   register(){
+    if(this.registerForm.valid){
+      console.log("Register info==>>", this.registerForm.value);
+      setTimeout(() => {
+        window.location.reload();
+      },2000);
+
+      // Navigate to login after successful registration
+      this.router.navigate(['MainPage/dashboard/login']);
+    } else{
+      this.snackBar.open('Please fill in all fields correctly', 'Close', { duration: 3000});
+    }
+   }
 
   // From here API starts :-
   users:any;
@@ -72,4 +108,7 @@ export class LoginComponent {
     });
   }
 }
+
+
+
 
