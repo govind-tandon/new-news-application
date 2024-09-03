@@ -7,16 +7,32 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './home.component.css'
 })
 
-export class HomeComponent implements OnInit{
+export class HomeComponent{
 
-  HomeId:any;
-  constructor(private route: ActivatedRoute) {}
+  handleError($event: ErrorEvent) {
+    // throw new Error('Method not implemented.');
+    }
+      newsArticles: any[] = [];
+    
+      // News API, from line 16 to 29 :-
+      // constructor(private newsService: NewsService) {}
+    
+      // ngOnInit(): void {
+      //   this.newsService.getTopHeadlines().subscribe(
+      //     (data) => {
+      //       this.newsArticles = data.articles; // Store the fetched articles
+      //       console.log(this.newsArticles); // Check the image URLs here
+      //     },
+      //     (error) => {
+      //       console.error('Error fetching news', error);
+      //     }
+      //   );
+      // }
+    
+    //   <!-- Add this method to your component -->
+    // handleError(event: any) {
+    //   event.target.src = 'assets/images/placeholder.png'; // Fallback image
+    // }
 
-  ngOnInit(): void {
-      // console.log("User id is :",this.route.snapshot.paramMap.get('id'));
-      this.route.paramMap.subscribe(params => {
-        this.HomeId = params.get('id');
-        console.log("Home id is :", this.HomeId);
-      });
-  }
+ 
 }

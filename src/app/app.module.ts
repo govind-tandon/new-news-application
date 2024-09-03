@@ -17,29 +17,20 @@ import { AboutComponent } from './Navbar/about/about.component';
 import { ContactUsComponent } from './Navbar/about/contact-us/contact-us.component';
 import { FooterComponent } from './MainPage/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
-import { Subpage1Component } from './MainPage/Body/subpage1/subpage1.component';
 import { HeaderComponent } from './MainPage/header/header.component';
-import { MainContentComponent } from './MainPage/main-content/main-content.component';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
-import { Router } from '@angular/router';
-import { CommonModule } from '@angular/common';
-import { LoginPageComponent } from './MainPage/login-page/login-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    // RegistrationComponent,
     HomeComponent,
     GlobalNewsComponent,
     LocalNewsComponent,
     AboutComponent,
     ContactUsComponent,
     FooterComponent,
-    Subpage1Component,
     HeaderComponent,
-    MainContentComponent,
-    LoginPageComponent
   ],
   imports: [
     BrowserModule,
@@ -49,9 +40,7 @@ import { LoginPageComponent } from './MainPage/login-page/login-page.component';
     MatFormFieldModule,
     FormsModule,
     MatButtonModule,
-    // MatSnackBar,
     MatSnackBarModule,
-    // CommonModule
     HttpClientModule
   ],
   providers: [

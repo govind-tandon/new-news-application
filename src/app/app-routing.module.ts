@@ -5,39 +5,36 @@ import { GlobalNewsComponent } from './Navbar/about/global-news/global-news.comp
 import { LocalNewsComponent } from './Navbar/about/local-news/local-news.component';
 import { AboutComponent } from './Navbar/about/about.component';
 import { ContactUsComponent } from './Navbar/about/contact-us/contact-us.component';
-import { LoginComponent } from './Navbar/about/login/login.component';
+import { LoginComponent } from './MainPage/login/login.component';
 
 const routes: Routes = [
   {
-    path:'home/:id',
-    // path:'',
+    path:"",
+    component:LoginComponent
+  },
+  {
+    path:'home',
     component:HomeComponent
   },
 
   {
-    path:'global-news/:id',
+    path:'global-news',
     component:GlobalNewsComponent
   },
 
   {
-    path:'local-news/:id',
+    path:'local-news',
     component:LocalNewsComponent
   },
 
   {
-    path:'about/:id',
-    // path:'aboutId',
+    path:'about',
     component:AboutComponent
   },
 
   {
-    path:'contact-us/:id',
+    path:'contact-us',
     component:ContactUsComponent
-  },
-
-  {
-    path:'login/:id',
-    component:LoginComponent
   },
 
 ];
