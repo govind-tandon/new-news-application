@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './Navbar/about/home/home.component';
-import { GlobalNewsComponent } from './Navbar/about/global-news/global-news.component';
-import { LocalNewsComponent } from './Navbar/about/local-news/local-news.component';
-import { AboutComponent } from './Navbar/about/about.component';
-import { ContactUsComponent } from './Navbar/about/contact-us/contact-us.component';
-import { LoginComponent } from './MainPage/login/login.component';
+import { HomeComponent } from './screens/home/home.component';
+import { GlobalNewsComponent } from './screens/global-news/global-news.component';
+import { LocalNewsComponent } from './screens/local-news/local-news.component';
+import { AboutComponent } from './screens/about/about.component';
+import { ContactUsComponent } from './screens/contact-us/contact-us.component';
+import { LoginComponent } from './AuthGuard/login/login.component';
 
 const routes: Routes = [
   {
